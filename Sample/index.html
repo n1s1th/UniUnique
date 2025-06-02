@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniUnique - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <!-- Background Images -->
+        <div class="bg-images">
+            <div class="bg-image bg-1"></div>
+            <div class="bg-image bg-2"></div>
+            <div class="bg-image bg-3"></div>
+            <div class="bg-image bg-4"></div>
+            <div class="bg-image bg-5"></div>
+            <div class="bg-image bg-6"></div>
+            <div class="bg-image bg-7"></div>
+            <div class="bg-image bg-8"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="welcome-text">
+                <p>Hey there! Welcome to</p>
+            </div>
+            
+            <div class="logo-section">
+                <h1 class="logo">
+                    
+                    <span class="uni-unique">UniUnique</span>
+
+                    
+                    <!--<span class="tagline">Your Ultimate Campus Companion</span>-->
+                
+                </h1>
+            </div>
+
+            <div class="description">
+                <p class="subtitle">Begin your UniUnique experience by selecting your university.</p>
+                <p class="main-desc">Discover a one-stop platform for accommodation, services, buying/selling, freelance work, and more.</p>
+            </div>
+
+            <div class="selection-section">
+                <div class="dropdown-container">
+                    <select id="universitySelect" class="university-dropdown">
+                        <option value="">Select your Uni...</option>
+                        <option value="mora">University of Moratuwa</option>
+                        <option value="pera">University of Peradeniya</option>
+                        <option value="japura">University of Sri Jayewardenepura</option>
+                        <option value="kelani">University of Kelaniya</option>
+                        <option value="uva">Uva Wellassa University</option>
+                        <option value="colombo">University of Colombo</option>
+                        <option value="ruhuna">University of Ruhuna</option>
+                        <option value="eastern">Eastern University</option>
+                    </select>
+                    <div class="dropdown-arrow">
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M1 1L6 6L11 1" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+                
+                <button class="lets-go-btn" id="letsGoBtn">Let's Go!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
