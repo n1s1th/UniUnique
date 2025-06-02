@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>University Redirect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .main-content {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      display: inline-block;
+      transition: transform 0.3s;
+    }
+
+    select {
+      padding: 10px;
+      font-size: 16px;
+      margin: 20px 0;
+    }
+
+    #letsGoBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      background: #ccc;
+      color: white;
+      cursor: pointer;
+    }
+
+    #letsGoBtn:disabled {
+      cursor: not-allowed;
+      background: #bbb;
+    }
+
+    .mora {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-content">
+    <h1>Choose Your University</h1>
+    <select id="universitySelect">
+      <option value="">-- Select --</option>
+      <option value="mora">University of Moratuwa</option>
+      <option value="colombo">University of Colombo</option>
+      <option value="japura">University of Sri Jayewardenepura</option>
+      <option value="pera">University of Peradeniya</option>
+      <option value="kelani">University of Kelaniya</option>
+      <option value="uva">Uva Wellassa University</option>
+      <option value="ruhuna">University of Ruhuna</option>
+      <option value="eastern">Eastern University</option>
+    </select>
+
+    <br>
+    <button id="letsGoBtn" disabled>Let's Go!</button>
+    <div class="mora">Mora</div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const universitySelect = document.getElementById('universitySelect');
+      const letsGoBtn = document.getElementById('letsGoBtn');
+      const moraText = document.querySelector('.mora');
+      const mainContent = document.querySelector('.main-content');
+
+      const universities = {
+        mora: { name: 'Mora', color: '#8b4d8f', url: 'https://uom.lk' },
+        colombo: { name: 'Colombo', color: '#6f42c1', url: 'https://uoc.lk' },
+        japura: { name: 'Japura', color: '#d63384', url: 'https://sjp.ac.lk' },
+        pera: { name: 'Pera', color: '#2c5aa0', url: 'https://www.pdn.ac.lk' },
+        kelani: { name: 'Kelani', color: '#198754', url: 'https://www.kln.ac.lk' },
+        uva: { name: 'Uva', color: '#fd7e14', url: 'https://www.uwu.ac.lk' },
+        ruhuna: { name: 'Ruhuna', color: '#20c997', url: 'https://www.ruh.ac.lk' },
+        eastern: { name: 'Eastern', color: '#dc3545', url: 'https://www.esn.ac.lk' } // example URL
+      };
+
+      universitySelect.addEventListener('change', function () {
+        const selected = this.value;
+        if (selected && universities[selected]) {
+          const uni = universities[selected];
+          moraText.textContent = uni.name;
+          moraText.style.color = uni.color;
+          letsGoBtn.disabled = false;
+          letsGoBtn.style.background = uni.color;
+          mainContent.style.transform = 'scale(1.02)';
+          setTimeout(() => mainContent.style.transform = 'scale(1)', 200);
+        } else {
+          moraText.textContent = 'Mora';
+          moraText.style.color = '#8b4d8f';
+          letsGoBtn.disabled = true;
+          letsGoBtn.style.background = '#ccc';
+        }
+      });
+
+      letsGoBtn.addEventListener('click', function () {
+        const selected = universitySelect.value;
+        if (selected && universities[selected]) {
+          window.location.href = universities[selected].url;
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
