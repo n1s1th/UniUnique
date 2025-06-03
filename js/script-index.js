@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     const redirectURLs = {
-        mora: 'https://uom.lk',
+        mora: 'pages/home.html',
         colombo: 'https://uoc.lk',
         japura: 'https://sjp.ac.lk',
         pera: 'https://www.pdn.ac.lk',
