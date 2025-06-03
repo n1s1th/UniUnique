@@ -58,6 +58,11 @@ body {
     color: #007bff;
 }
 
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
 .login-btn {
     background: #007bff;
     color: white;
@@ -69,6 +74,21 @@ body {
 }
 
 .login-btn:hover {
+    background: #0056b3;
+}
+
+
+.signup-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signup-btn:hover {
     background: #0056b3;
 }
 
