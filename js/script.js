@@ -67,11 +67,7 @@ document.querySelectorAll('section').forEach(section => {
 
 // Button click handlers
 document.addEventListener('DOMContentLoaded', () => {
-    // Login button
-    const loginBtn = document.querySelector('.login-btn');
-    loginBtn.addEventListener('click', () => {
-        alert('Login functionality would be implemented here');
-    });
+    
 
     // Get Started button
     const getStartedBtn = document.querySelector('.btn-primary');
