@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+/* Reset & Base Styles*/
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ body.about-page {
   justify-content: center;
 }
 
-/* Background Images (Homepage Specific) */
+/* Background Images (Homepage Specific) 
 .bg-images {
   position: absolute;
   top: 0;
@@ -129,9 +129,9 @@ body.about-page {
   66% {
     transform: translateY(10px) rotate(-1deg);
   }
-}
+}*/
 
-/* Main Content (Homepage Specific) */
+/* Main Content (Homepage Specific) 
 .main-content {
   position: relative;
   z-index: 10;
@@ -197,9 +197,9 @@ body.about-page {
   line-height: 1.6;
   max-width: 480px;
   margin: 0 auto;
-}
+}*/
 
-/* Selection Section (Homepage Specific) */
+/* Selection Section (Homepage Specific) 
 .selection-section {
   display: flex;
   flex-direction: column;
@@ -280,7 +280,7 @@ body.about-page {
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
-}
+}*/
 
 /* About Page Styles */
 .about-header {
@@ -431,7 +431,7 @@ body.about-page {
   transform: translateY(-2px);
 }
 
-/* Navigation (Updated to match screenshot) */
+/* Navigation */
 .navbar {
     background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -490,6 +490,35 @@ body.about-page {
     margin-top:-5px;
     
     
+}
+
+.login-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #0056b3;
+}
+
+
+.signup-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signup-btn:hover {
+    background: #0056b3;
 }
 
 .hamburger {
@@ -595,6 +624,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-top:30px ;
 }
 
 /* Responsive Design */
@@ -647,7 +677,7 @@ footer {
   }
 
   /* Navigation Responsive */
-  .nav-menu {
+  /*.nav-menu {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -664,9 +694,9 @@ footer {
 
   .nav-buttons {
     display: none;
-  }
+  }*/
 
-  /*sign up and login*/
+  /*sign up and login
   .signup-btn {
     background: #007bff;
     color: white;
@@ -695,7 +725,7 @@ footer {
 
   .hamburger {
     display: flex;
-  }
+  }*/
 }
 
 @media (max-width: 480px) {
