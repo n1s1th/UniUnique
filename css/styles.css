@@ -124,20 +124,21 @@ body {
 .hero {
     margin-top: 50px;
     margin:auto;
-    padding: 100px 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     display: flex;
     width:auto;
     align-items: center;
     min-height: 80vh;
+    padding: 5px 15px;
+    
 }
 
 .hero-content {
     flex: 1;
     max-width: auto;
     padding: 5px 15px;
-    
+    margin-left: 150px;
 }
 
 .hero h1 {
