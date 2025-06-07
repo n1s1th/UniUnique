@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniUnique - Your Ultimate Campus Companion</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+  
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>UniUnique</h2>
+                <h2><a href="../index.html" style="text-decoration: none; color: inherit;">UniUnique</a></h2>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#marketplace">Marketplace</a></li>
-                <li><a href="#freelance">Freelance</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#accommodation">Accommodation</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#eats">Eats</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="freelance.html">Freelance</a></li>
+                <li><a href="services.html">Services</a></li>
+                <!--<li><a href="#accommodation">Accommodation</a></li>-->
+                <li><a href="events.html">Events</a></li>
+                <!--<li><a href="#eats">Eats</a></li>-->
             </ul>
-            <button class="login-btn">Log In</button>
+            <div class="nav-buttons">
+                <button class="signup-btn">Sign Up</button>
+                <button class="login-btn">Log In</button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -167,6 +171,74 @@
         </div>
     </section>
 
+    <!--List of Services-->
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Discover the comprehensive range of services we offer to enhance your university experience</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>🛒</span>
+                    </div>
+                    <h3>Marketplace</h3>
+                    <p>Buy or sell electronics, books, tools, or any useful item within your university. Safe and student-centered trading platform.</p>
+                    <a href="#marketplace" class="service-link">Visit Marketplace</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>🎓</span>
+                    </div>
+                    <h3>Freelancing</h3>
+                    <p>Offer or find freelance services from fellow university students. Whether you're a designer, coder, writer, or tutor—this is your space to collaborate.</p>
+                    <a href="#freelance" class="service-link">Explore Freelance</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>🏠</span>
+                    </div>
+                    <h3>Accommodation</h3>
+                    <p>Discover affordable accommodation options tailored for students. Browse rooms with essential amenities and convenient locations near your university.</p>
+                    <a href="#accommodation" class="service-link">Find Housing</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>📅</span>
+                    </div>
+                    <h3>University Events</h3>
+                    <p>Stay updated with the latest university events including workshops, fests, and hackathons. Never miss out on what's happening!</p>
+                    <a href="#events" class="service-link">View Events</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>📚</span>
+                    </div>
+                    <h3>Study Resources</h3>
+                    <p>Access a comprehensive library of study materials, notes, and academic resources shared by students and faculty members.</p>
+                    <a href="#" class="service-link">Browse Resources</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <span>🤝</span>
+                    </div>
+                    <h3>Campus Connect</h3>
+                    <p>Connect with fellow students, join study groups, and build meaningful relationships within your university community.</p>
+                    <a href="#" class="service-link">Get Connected</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -213,6 +285,6 @@
         </div>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
