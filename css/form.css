@@ -43,7 +43,7 @@ form {
 form > div, fieldset {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 8px;
 }
 
 /* Label Styles */
@@ -51,7 +51,7 @@ label {
     font-weight: 600;
     color: #4a3c8c;
     font-size: 0.95em;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 
 /* Input Styles */
@@ -115,10 +115,9 @@ select {
 fieldset {
     border: 2px solid #e8d5ff;
     border-radius: 16px;
-    padding: 25px 25px 30px 25px;
+    padding: 25px;
     background: linear-gradient(135deg, #fefcff 0%, #f9f6ff 100%);
-    margin: 10px 0 20px 0;
-    box-sizing: border-box;
+    margin: 10px 0;
 }
 
 /* Legend Styles */
@@ -282,4 +281,15 @@ button:focus-visible {
     color: #dc3545;
     font-size: 0.9em;
     margin-top: 5px;
+}
+
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
 }
