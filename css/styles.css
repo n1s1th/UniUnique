@@ -45,6 +45,10 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    justify-content: space-between;
+    margin-top:10px;
+    
+    
 }
 
 .nav-menu a {
@@ -52,6 +56,8 @@ body {
     color: #333;
     font-weight: 500;
     transition: color 0.3s;
+    
+    
 }
 
 .nav-menu a:hover {
@@ -61,6 +67,9 @@ body {
 .nav-buttons {
     display: flex;
     gap: 1rem;
+    margin-top:-5px;
+    
+    
 }
 
 .login-btn {
