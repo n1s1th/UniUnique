@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="../css/auth.css">
 </head>
 <body>
     <div class="container">
@@ -45,6 +45,6 @@
             <a href="signup.php">Create Account</a>
         </div>
     </div>
-    <script src="validation.js"></script>
+    <script src="../js/validation.js"></script>
 </body>
 </html>
