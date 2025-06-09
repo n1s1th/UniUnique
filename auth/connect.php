@@ -46,8 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email']) && isset($_PO
                     setcookie('remember_user', $cookie_value, time() + (86400 * 30), "/"); // 30 days
                 }
                 
-                // Redirect to index2.html
-                header("Location: index2.html");
+                // Redirect to index2.html with success parameter
+                header("Location: ../auth_pages/home_uom.php?login=success");
                 exit();
             } else {
                 $error = "Invalid email or password";
@@ -97,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['fullname']) && isset($
                 header("Location: login.php?success=1");
                 exit();
             } else {
-                $error = "Registration failed. Please try again.";
+                $error = "Registration failed: " . $stmt->error;
             }
         }
         
@@ -129,7 +129,7 @@ $conn->close();
 
 // If there's an error, redirect back to the form with error message
 if (isset($error)) {
-    $referring_page = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'login.html';
+    $referring_page = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'login.php';
     header("Location: " . $referring_page . "?error=" . urlencode($error));
     exit();
 }

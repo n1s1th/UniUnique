@@ -1,5 +1,7 @@
 <?php
 session_start();
+session_unset();     // Unset all session variables
+session_destroy();   // Destroy the session
 
 // Unset all session variables
 $_SESSION = array();
@@ -22,6 +24,6 @@ if (isset($_COOKIE['remember_user'])) {
 session_destroy();
 
 // Redirect to login page
-header("Location: login.html");
+header("Location: ../pages/form.html");
 exit();
 ?>
