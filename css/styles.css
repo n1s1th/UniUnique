@@ -251,9 +251,20 @@ body {
 .btn-offer {
     background: #28a745;
     color: white;
-    align-items: center;
-    align-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
 }
+
+.btn-offer:hover {
+    background: #218838;
+}
+
 
 .btn-offer:hover {
     background: #218838;

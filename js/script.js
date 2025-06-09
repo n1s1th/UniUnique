@@ -79,6 +79,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Discover more
+    const discovermoreBtn = document.querySelector('.btn-secondary');
+    if (discovermoreBtn) {
+        discovermoreBtn.addEventListener('click', () => {
+            document.querySelector('#marketplace').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+
     // Save spot buttons for events
     document.querySelectorAll('.btn-save').forEach(btn => {
         btn.addEventListener('click', (e) => {
