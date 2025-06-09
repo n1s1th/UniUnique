@@ -145,6 +145,7 @@ body {
     font-size: 3rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    text-align: left;
 }
 
 .hero p {
@@ -153,6 +154,7 @@ body {
     opacity: 1.0;
     color: #333;
     justify-content: left;
+    text-align: left;
 
 }
 
@@ -669,7 +671,7 @@ section p {
 }
 
 .service-card:hover .service-icon {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
 }
 
 .service-icon span {
