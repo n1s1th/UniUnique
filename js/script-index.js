@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const redirectURLs = {
         mora: 'pages/home.html',
-        colombo: 'https://uoc.lk',
-        japura: 'https://sjp.ac.lk',
-        pera: 'https://www.pdn.ac.lk',
-        kelani: 'https://www.kln.ac.lk',
-        uva: 'https://www.uwu.ac.lk',
-        ruhuna: 'https://www.ruh.ac.lk',
-        eastern: 'https://www.esn.ac.lk'
+        colombo: 'pages/homecol.html',
+        japura: 'pages/homejapura.html',
+        pera: 'pages/homepera.html',
+        kelani: 'pages/homekelaniya.html',
+        uva: 'pages/homeuva.html',
+        ruhuna: 'pages/homeruhuna.html',
+        eastern: 'pages/homeeastern.html'
     };
 
     universitySelect.addEventListener('change', function () {

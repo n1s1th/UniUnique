@@ -67,16 +67,22 @@ document.querySelectorAll('section').forEach(section => {
 
 // Button click handlers
 document.addEventListener('DOMContentLoaded', () => {
-    // Login button
-    const loginBtn = document.querySelector('.login-btn');
-    loginBtn.addEventListener('click', () => {
-        alert('Login functionality would be implemented here');
-    });
+    
 
     // Get Started button
     const getStartedBtn = document.querySelector('.btn-primary');
     if (getStartedBtn) {
         getStartedBtn.addEventListener('click', () => {
+            document.querySelector('#marketplace').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Discover more
+    const discovermoreBtn = document.querySelector('.btn-secondary');
+    if (discovermoreBtn) {
+        discovermoreBtn.addEventListener('click', () => {
             document.querySelector('#marketplace').scrollIntoView({
                 behavior: 'smooth'
             });

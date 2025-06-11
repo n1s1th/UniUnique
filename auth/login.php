@@ -4,48 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        h1 {
-            color: #0077cc;
-            text-align: center;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            color: #4a4a4a;
-            font-size: 14px;
-        }
-        
-        .footer a {
-            color: #0077cc;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        .header {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-        
-        .logo {
-            font-size: 24px;
-            color: #0077cc;
-            font-weight: 700;
-            padding: 5px 15px;
-            border: 3px solid #0077cc;
-            border-radius: 8px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../css/auth.css">
 </head>
 <body>
     <div class="container">
@@ -53,7 +12,20 @@
             <div class="logo">UniUnique</div>
         </div>
         <h1>Welcome Back</h1>
-        <form id="login-form">
+        
+        <?php if (isset($_GET['error'])): ?>
+            <div class="error-message" style="color: red; text-align: center; margin-bottom: 20px;">
+                <?php echo htmlspecialchars($_GET['error']); ?>
+            </div>
+        <?php endif; ?>
+        
+        <?php if (isset($_GET['success'])): ?>
+            <div class="success-message" style="color: green; text-align: center; margin-bottom: 20px;">
+                Registration successful! Please log in.
+            </div>
+        <?php endif; ?>
+        
+        <form id="login-form" method="POST" action="connect.php">
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required>
@@ -70,9 +42,9 @@
         </form>
         <div class="footer">
             <a href="forgot-password.html">Forgot Password?</a>
-            <a href="signup.html">Create Account</a>
+            <a href="signup.php">Create Account</a>
         </div>
     </div>
-
+    <script src="../js/validation.js"></script>
 </body>
 </html>

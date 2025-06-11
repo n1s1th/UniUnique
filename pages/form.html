@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Post Freelancing Service Ad</title>
+<link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+<main>
+<h1>Post Your Freelancing Service Ad</h1>
+<form method="POST" action="#" aria-label="Form to post freelancing service ad">
+<div>
+<label for="service-title">Service Title</label>
+<input type="text" id="service-title" name="service-title" required maxlength="100" placeholder="E.g. Professional Web Development" />
+</div>
+<div>
+<label for="service-category">Category</label>
+<select id="service-category" name="service-category" required>
+<option value="" disabled selected>Select a category</option>
+<option value="web-development">Web Development</option>
+<option value="graphic-design">Graphic Design</option>
+<option value="writing">Writing & Translation</option>
+<option value="digital-marketing">Digital Marketing</option>
+<option value="video-animation">Video & Animation</option>
+<option value="music-audio">Music & Audio</option>
+<option value="software-development">Software Development</option>
+<option value="business">Business Services</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div>
+<label for="description">Description</label>
+<textarea id="description" name="description" rows="6" required maxlength="1000" placeholder="Describe the service you offer in detail"></textarea>
+</div>
+<div>
+<label for="skills">Skills</label>
+<input type="text" id="skills" name="skills" placeholder="E.g. JavaScript, React, CSS" />
+</div>
+<div>
+<label for="price">Price</label>
+<input type="number" id="price" name="price" min="0" step="0.01" placeholder="E.g. 50.00" />
+</div>
+<div>
+<label for="duration">Duration</label>
+<select id="duration" name="duration" required>
+<option value="" disabled selected>Select duration</option>
+<option value="per-hour">Per Hour</option>
+<option value="per-project">Per Project</option>
+<option value="fixed-price">Fixed Price</option>
+</select>
+</div>
+<fieldset >
+<legend>Contact Information</legend>
+<div>
+<label for="full-name">Full Name</label><br />
+<input type="text" id="full-name" name="full-name" required placeholder="Your full name" />
+</div>
+<div>
+<label for="email">Email</label><br />
+<input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+</div>
+<div>
+<label for="phone">Phone (optional)</label><br />
+<input type="tel" id="phone" name="phone" placeholder="+94 77 111 1111" />
+</div>
+</fieldset>
+<div>
+<button type="submit">Post Ad</button>
+</div>
+</form>
+</main>
+</body>
+</html>

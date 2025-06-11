@@ -24,11 +24,12 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
+    margin:auto;
 }
 
 .nav-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -37,14 +38,22 @@ body {
 }
 
 .nav-logo h2 {
-    color: #007bff;
-    font-size: 1.8rem;
+    font-size: 24px;
+    color: #0077cc;
+    font-weight: 700;
+    padding: 5px 15px;
+    border: 3px solid #0077cc;
+    border-radius: 8px;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
+    justify-content: space-between;
+    margin-top:10px;
+    
+    
 }
 
 .nav-menu a {
@@ -52,6 +61,8 @@ body {
     color: #333;
     font-weight: 500;
     transition: color 0.3s;
+    
+    
 }
 
 .nav-menu a:hover {
@@ -61,6 +72,9 @@ body {
 .nav-buttons {
     display: flex;
     gap: 1rem;
+    margin-top:-5px;
+    
+    
 }
 
 .login-btn {
@@ -108,36 +122,47 @@ body {
 
 /* Hero Section */
 .hero {
-    margin-top: 70px;
-    padding: 80px 20px;
+    margin-top: 50px;
+    margin:auto;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     display: flex;
+    width:auto;
     align-items: center;
     min-height: 80vh;
+    padding: 5px 15px;
+    
 }
 
 .hero-content {
     flex: 1;
-    max-width: 600px;
+    max-width: auto;
+    padding: 5px 15px;
+    margin-left: 150px;
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     line-height: 1.2;
+    text-align: left;
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    opacity: 1.0;
+    color: #333;
+    justify-content: left;
+    text-align: left;
+
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .btn-primary, .btn-secondary, .btn-offer, .btn-save {
@@ -147,11 +172,13 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: all 0.3s;
+    align-items: center;
 }
 
 .btn-primary {
     background: #007bff;
     color: white;
+    align-items: center;
 }
 
 .btn-primary:hover {
@@ -190,15 +217,17 @@ body {
 /* Special Offer */
 .special-offer {
     background: #f8f9fa;
-    padding: 60px 20px;
+    max-width: auto;
+    padding: 20px 40px;
 }
 
 .offer-content {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 40px;
 }
 
 .offer-text h3 {
@@ -222,7 +251,20 @@ body {
 .btn-offer {
     background: #28a745;
     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
 }
+
+.btn-offer:hover {
+    background: #218838;
+}
+
 
 .btn-offer:hover {
     background: #218838;
@@ -640,7 +682,7 @@ section p {
 }
 
 .service-card:hover .service-icon {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
 }
 
 .service-icon span {
